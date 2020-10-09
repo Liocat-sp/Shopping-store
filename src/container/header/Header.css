@@ -1,0 +1,82 @@
+.hero {
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+.herotext {
+    grid-column: 1/2;
+    align-self: flex-start;
+    padding: 5% 5% 5% 10%;
+    font-size: 200%;
+}
+.herotext h1 {
+    font-size: 200%;
+    margin-bottom: 0;
+}
+.herotext p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 90%;
+    color: #7a7a7a;
+    width: 80%;
+}
+.heroimg {
+    grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.imagehero {
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width: 850px) {
+    .hero {
+        position: relative;
+        grid-template-columns: 1fr;
+    }
+    .herotext {
+        font-size: 130%;
+        grid-column: 1/2;
+        z-index: 2;
+    }
+    .herotext h1 {
+        color: #ff5400;
+    }
+    .herotext p {
+        color: #32101e;
+    }
+    .heroimg {
+        grid-column: 1/2;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+    }
+}
+@media (max-width: 2000px) {
+    .herotext {
+        font-size: 270%;
+    }
+}
+@media (max-width: 1500px) {
+    .herotext {
+        font-size: 210%;
+    }
+}
+@media (max-width: 1100px) {
+    .herotext {
+        font-size: 165%;
+    }
+}
+@media (max-width: 500px) {
+    .herotext {
+        font-size: 100%;
+    }
+
+}
+

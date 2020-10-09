@@ -1,0 +1,103 @@
+.cartItem {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 45% 25% 15%;
+    justify-items: center;
+    align-items: flex-start;
+    border-bottom: 1px solid #7a7a7a;
+    margin-bottom: 2%;
+    padding-bottom: 1%;
+}
+.cartimg {
+    width: 100%;
+}
+.cartcontent {
+    width: 85%;
+}
+.cartimg img{
+    width: 100%;
+    object-fit: cover;
+}
+.cartcontent h4{
+    margin-top: 0;
+    margin-bottom: 5%;
+    font-size: 150%;
+    font-weight: 600;
+}
+.cartcontent p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 105%;
+    color: #7a7a7a;
+}
+.cartprice {
+    width: 50%;
+    text-align: center;
+    align-self: center; 
+    padding: 1%;
+}
+.cartprice h3{
+    margin: 0;
+    font-size: 120%;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.Quantity {
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.Quantity span{
+    display: inline-block;
+    padding-top: 5%;
+}
+.deletebtn {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+.delete {
+    margin: 0 auto;
+    width: 25%;
+}
+.keyup,
+.keydown {
+    width: 25px;
+    cursor: pointer;
+}
+.keyup:active,
+.keydown:active {
+    transform: translateY(1px);
+}
+@media (max-width: 1000px) {
+    .cartItem {
+        font-size: 90%;
+    }
+    .Quantity {
+        grid-template-columns: 1fr;
+    }
+    .Quantity span {
+        padding: 5%;
+    }
+}
+@media (max-width: 650px) {
+    .cartItem {
+        font-size: 60%;
+    }
+    .keyup,
+    .keydown {
+    width: 15px;    
+    }
+    .cartItem {
+        font-size: 40%;
+    }
+}
+@media (max-width: 370px) {
+    .keyup,
+    .keydown {
+        width: 10px;
+    }
+}

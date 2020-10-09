@@ -1,0 +1,83 @@
+.item {
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+.itemImage {
+    width: 100%;
+    height: 100%;
+}
+.itemImage img {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.item_Info {
+    width: 95%;
+    margin: 0 auto;
+}
+.itemPrice span {
+    font-size: 65%;
+}
+.item h5 {
+    margin: 0;
+    font-size: 120%;
+    font-weight: 500;
+    margin-top: 2%;
+    letter-spacing: 1px;
+    color: #1e1e1e;
+}
+.item h2 {
+    margin: 0;
+    font-size: 200%;
+    margin-bottom: 1%;
+    letter-spacing: 1px;
+}
+.item p {
+    margin: 0;
+    color: #7a7a7a;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.itemsbtn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 6%;
+}
+.btnview,
+.btnadd {
+    cursor: pointer;
+}
+.btnview:active,
+.btnadd:active {
+    transform: translateY(1px);
+}
+.itemsbtn button,
+.itemsbtn button:visited,
+.itemsbtn button:active { 
+    width: 95%;
+    padding: 10% 8%;
+    background-color: #fff;
+    border: 1px solid #7a7a7a;
+    border-radius: 30px;
+    outline: none;
+}
+.itemsbtn .btnadd,
+.itemsbtn .btnadd:active,
+.itemsbtn .btnadd:visited  {
+    background-color: #000;
+    color: #fff;
+}
+.itemsbtn .btnview {
+    transition: background-color 200ms ease-in-out;
+}
+.itemsbtn .btnview:hover {
+    background-color: #000;
+    color: #fff;
+}

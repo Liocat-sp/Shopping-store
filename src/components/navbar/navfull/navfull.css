@@ -1,0 +1,32 @@
+.navfull {
+    grid-column: 3/5;
+    width: 50%;
+}
+.navfull ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 105%;
+    font-weight: 400;
+}
+.navfull ul li {
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    vertical-align: middle;
+}
+.shopcart {
+    margin-right: 2%;
+}
+
+.cart {
+    margin-left: 10%;
+    width: 20px;
+    fill: #fff;
+    transform:  scale(1.3);
+}
+@media (max-width: 650px) {
+    .navfull {
+        display: none;
+    }
+}    

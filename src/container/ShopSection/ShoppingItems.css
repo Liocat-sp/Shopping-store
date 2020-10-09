@@ -1,0 +1,25 @@
+.shopContainer {
+    width: 95%;
+    margin: 0 auto;
+}
+.shopContainer h1 {
+    font-size: 150%;
+    margin-bottom: 2%;
+}
+.shopping_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width: 850px) {
+    .shopping_items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 550px) {
+    .shopping_items {
+        grid-template-columns: 1fr;
+    }
+}

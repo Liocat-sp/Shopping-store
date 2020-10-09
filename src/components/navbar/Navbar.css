@@ -1,0 +1,42 @@
+.nav {
+    overflow: hidden;
+    cursor: pointer;
+    height: 10vh;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 10px 15px 0 #00000052;    
+}
+.link,
+.link:visited,
+.link:active {
+    text-decoration: none;
+    color: #fff;
+}
+.logo {
+    font-size: 120%;
+    font-weight: 600;
+}
+.navicon1 {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .nav {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .navlist {
+        display: none;
+    }
+    .navicon1 {
+        display: block;
+    }
+}
+@media (max-width: 400px) {
+    .nav {
+        grid-template-columns: 1fr 1fr;
+    }
+}

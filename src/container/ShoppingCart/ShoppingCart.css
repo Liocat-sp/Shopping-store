@@ -1,0 +1,47 @@
+.ShoppingCart  {
+    width: 95%;
+    min-height: 50vh;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+.ShoppingCart h1 {
+    font-size: 150%;
+}
+.checkoutinfo {
+    margin-top: 5%;
+    font-size: 110%;
+    margin-bottom: 2%;
+}
+.checkout button,
+.checkout button:visited,
+.checkout button:active { 
+    width: 150px;
+    padding: 1% 2%;
+    background-color: #000;
+    border: 1px solid #7a7a7a;
+    color: #fff;
+    border-radius: 30px;
+    outline: none;
+}
+.checkout button:active{
+    transform: translateY(1px);
+}
+
+@media (max-width: 600px) {
+    .checkout button {
+        padding: 3% 2%;
+    }
+    .checkoutinfo {
+        font-size: 65%;
+    }
+}
+@media (max-width: 550px) {
+    .shopping_items {
+        grid-template-columns: 1fr;
+    }
+    .checkout button,
+    .checkout button:visited,
+    .checkout button:active {
+        width: 90px;
+    }
+}
